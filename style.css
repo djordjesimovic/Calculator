@@ -1,0 +1,98 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: linear-gradient(to right, rgb(252, 252, 252), rgb(33, 228, 224));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family:  Calibri;
+}
+.calculator{
+    height: 80vh;
+    width: 350px;
+    background-color: lightslategrey;
+    margin-top: 10vh;
+}
+.resoult{
+    height: 20vh;
+}
+.resoult .history{
+    height: 10vh;
+    width: 100%;
+    padding: 2vh;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    overflow: hidden;
+}
+.resoult .history .history-value{
+    font-size: 20px;
+    color: gray;
+    margin-right: 10px;
+    width: 100%;
+    text-align: right;
+}
+.resoult .entry{
+    height: 10vh;
+    width: 100%;
+    padding: 2vh;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    overflow: hidden;
+}
+.resoult .entry .entry-value{
+    font-size: 40px;
+    color: black;
+    font-weight: bold;
+    width: 100%;
+    text-align: right;
+}
+.keyboard{
+    height: 60vh;
+    position: relative;
+}
+.operator, .number{
+    float: center;
+    height: 50px;
+    width: 50px;
+    margin: 15px;
+    border-radius: 20px;
+    background-color: white;
+    font-size: 20px;
+    font-weight: bold;
+    border: none;
+}
+.number:hover{
+    background-color: black;
+    color: white;
+    transition: all 0.3s ease;
+}
+.operator:hover{
+    background-color: black;
+    color: white;
+    transition: all 0.3s ease;
+}
+.keyboard .poslednja{
+    position: absolute;
+    top: 80%;
+    width: 100%;
+}
+.keyboard .poslednja .nula{
+    position: absolute;
+    left: 24%;
+}
+.keyboard .poslednja .jednako{
+    position: absolute;
+    left: 72%;
+    font-size: 20px;
+}
+.operator:focus, .number:focus{
+    outline: 0;
+}
+.operator:hover, .number:hover{
+    cursor: pointer;
+}
